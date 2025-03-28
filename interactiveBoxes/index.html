@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bundle & Save</h1>
+    
+    <div class="bundle-option" onclick="toggleOption(this)">
+        <div class="option-header">
+            <div>
+                <div class="option-title">1 Pair</div>
+                <div class="discount-badge">50% OFF</div>
+            </div>
+            <div class="option-price">DKK 195.00</div>
+        </div>
+        <div class="option-details">
+            <div class="size-options">
+                <h3>Size</h3>
+                <div class="size-buttons">
+                    <div class="size-btn" onclick="selectSize(this, event)">S</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">M</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">L</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">XL</div>
+                </div>
+            </div>
+            <div class="color-options">
+                <h3>Color</h3>
+                <div class="color-buttons">
+                    <div class="color-btn" style="background-color: #000;" onclick="selectColor(this, event)"></div>
+                    <div class="color-btn" style="background-color: #ccc;" onclick="selectColor(this, event)"></div>
+                    <div class="color-btn" style="background-color: #8B4513;" onclick="selectColor(this, event)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bundle-option active" onclick="toggleOption(this)">
+        <div class="option-header">
+            <div>
+                <div class="option-title">2 Pair</div>
+                <div class="popular-badge">Most Popular</div>
+                <div class="discount-badge">40% OFF</div>
+            </div>
+            <div class="option-price">DKK 345.00</div>
+        </div>
+        <div class="option-details" style="display: block;">
+            <div class="size-options">
+                <h3>Size</h3>
+                <div class="size-buttons">
+                    <div class="size-btn selected" onclick="selectSize(this, event)">S</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">M</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">L</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">XL</div>
+                </div>
+            </div>
+            <div class="color-options">
+                <h3>Color</h3>
+                <div class="color-buttons">
+                    <div class="color-btn selected" style="background-color: #000;" onclick="selectColor(this, event)"></div>
+                    <div class="color-btn" style="background-color: #ccc;" onclick="selectColor(this, event)"></div>
+                    <div class="color-btn" style="background-color: #8B4513;" onclick="selectColor(this, event)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bundle-option" onclick="toggleOption(this)">
+        <div class="option-header">
+            <div>
+                <div class="option-title">3 Pair</div>
+                <div class="discount-badge">60% OFF</div>
+            </div>
+            <div class="option-price">DKK 528.00</div>
+        </div>
+        <div class="option-details">
+            <div class="size-options">
+                <h3>Size</h3>
+                <div class="size-buttons">
+                    <div class="size-btn" onclick="selectSize(this, event)">S</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">M</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">L</div>
+                    <div class="size-btn" onclick="selectSize(this, event)">XL</div>
+                </div>
+            </div>
+            <div class="color-options">
+                <h3>Color</h3>
+                <div class="color-buttons">
+                    <div class="color-btn" style="background-color: #000;" onclick="selectColor(this, event)"></div>
+                    <div class="color-btn" style="background-color: #ccc;" onclick="selectColor(this, event)"></div>
+                    <div class="color-btn" style="background-color: #8B4513;" onclick="selectColor(this, event)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shipping-info">Free 2 Day Shipping</div>
+    
+    <div class="total">Total : DKK 360.00</div>
+    
+    <button class="add-to-cart">+ Add to Cart</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
